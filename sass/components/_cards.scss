@@ -60,7 +60,7 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 1;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform $transition;
   }
   .cards__link:hover &::before {
