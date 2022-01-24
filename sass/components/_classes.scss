@@ -1,0 +1,60 @@
+.classes {
+    display: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.classes__container {
+  @extend %container;
+}
+
+.classes__title {
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  color: $secondari-text-color;
+}
+
+.classes__list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes__item {
+  position: relative;
+}
+
+.classes__no-gap {
+  display: block;
+}
+
+.classes__text {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+  transform: translateY(-100%);
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-family: $primeri-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+  background-color: $classes-bg-color;
+}

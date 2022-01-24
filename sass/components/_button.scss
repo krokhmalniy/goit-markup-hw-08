@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  text-align: center;
+
+  color: $tertiary-text-color;
+  background: $button-background;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
+}
+
+.button--footer {
+  @include padding-right(62px);
+}
+
+.button--footer {
+  @include padding-left(29px);
+}

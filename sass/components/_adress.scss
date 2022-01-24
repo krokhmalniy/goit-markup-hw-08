@@ -1,0 +1,32 @@
+.adress_list {
+  @extend %list;
+}
+
+.adress_link {
+  @extend %link;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+
+  .adress_item:first-child & {
+    color: $tertiary-text-color;
+  }
+
+  .adress_item:not(:last-child) & {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  .adress_item:first-child &:focus,
+  .adress_item:first-child &:hover {
+    color: $hover-color;
+  }
+}

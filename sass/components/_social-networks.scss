@@ -1,0 +1,29 @@
+.social-networks {
+  @extend %list;
+  display: none;
+
+  .header_wraper.is-open & {
+    display: flex;
+  }
+}
+
+.social-networks__item {
+  margin-right: 10px;
+
+  &:not(:first-child) {
+    border-left: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.social-networks__link {
+  @extend %link;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $hover-color;
+
+  .social-networks__item:not(:first-child) & {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+.buttonn-nav {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.buttonn-nav__icon {
+  width: 40px;
+  height: 40px;
+  transition: $transition;
+
+  .buttonn-nav:hover & {
+    fill: $hover-color;
+  }
+}
+
+.buttonn-nav__crose {
+  display: none;
+}
+
+.is-open {
+  & .buttonn-nav__crose {
+    display: block;    
+  }
+
+  & .buttonn-nav__menu {
+    display: none;
+  }
+}

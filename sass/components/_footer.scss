@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $footer-bg-color;
+}
+
+.footer__container {
+  @extend %container;
+  text-align: center;
+
+  @media screen and (min-width: 768px) and (max-width) {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+  }
+}
+
+.footer__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__text {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+}

@@ -1,0 +1,35 @@
+@mixin text($color) {
+    color: $color;
+}
+
+@mixin margin-top($margin-top) {
+    margin-top: $margin-top;
+}
+
+@mixin margin-bottom($margin-bottom) {
+    margin-bottom: $margin-bottom;
+}
+
+@mixin margin-left($margin-left) {
+    margin-left: $margin-left;
+}
+
+@mixin margin-right($margin-right) {
+    margin-right: $margin-right;
+}
+
+@mixin background-color($background-color) {
+    background-color: $background-color;
+}
+
+@mixin padding-right($padding-right) {
+    padding-right: $padding-right;
+}
+
+@mixin padding-left($padding-left) {
+    padding-left: $padding-left;
+}
+
+@mixin ali {
+    
+}
