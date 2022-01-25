@@ -27,14 +27,19 @@
     left: 0;
     width: 100%;
     padding: 48px 40px;
+    
     z-index: 998;
     transform: translateX(-100%);
-    transition: transform $transition;
+    transition: $transition;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
       background-color: $primeri-bg-color;
       transform: translateX(0);
+      height: 100vh;
     }
   }
 
@@ -49,12 +54,10 @@
   }
 }
 
-// .div {
-//   width: 100%;
-//   border: 2px solid green;
-
-// }
-
-// .div_p {
-//   word-wrap: break-word;
+// .header_indent {
+//   @media screen and (max-width: 767px) {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//   }
 // }

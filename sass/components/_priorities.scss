@@ -34,7 +34,7 @@
 }
 
   @media screen and (min-width: 768px) {
-       width: 270px;
+       width: 354px;
     &:nth-child(2n + 1) {     
       margin-right: 30px;
 
@@ -45,6 +45,7 @@
 
     @media screen and (min-width: 1200px) {
        margin-bottom: 0; 
+        width: 270px;
         
       &:last-child {
         margin-right: 0;

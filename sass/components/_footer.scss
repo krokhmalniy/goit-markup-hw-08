@@ -1,14 +1,14 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: $footer-bg-color;
+  background-color: $footer-bg-color; 
 }
 
 .footer__container {
   @extend %container;
   text-align: center;
 
-  @media screen and (min-width: 768px) and (max-width) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-left: 76px;
     padding-right: 89px;
   }

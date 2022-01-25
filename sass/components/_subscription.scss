@@ -8,6 +8,13 @@
 }
 
 .subscription__form {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+   
   @media screen and (min-width: 1200px) {
   display: flex;
   }
@@ -86,6 +93,10 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  width: 450px;
+  }
+ 
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-bottom: 0;
